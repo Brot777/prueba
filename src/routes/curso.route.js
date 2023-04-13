@@ -1,6 +1,8 @@
 import { Router } from "express";
+import { createCurso} from "../controlles/curso.js";
 const router=Router()
 
-router.get("/",(req,res)=>{console.log("router");})
+router.post("/",createCurso)
+router.get("/",createCurso)
 
 export default router
